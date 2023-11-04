@@ -24,6 +24,7 @@
 <body>
     <div class="container">
         <h1>Guess it or Miss it Math Quiz Game</h1>
+        <button id="instructionsBtn">Instructions</button> <!-- Button to open instructions modal -->
         <div class="player-box">
             <div class="player active" id="player1">
                 <h2>Player 1</h2>
@@ -40,6 +41,25 @@
         <p id="result"></p>
         <button id="reset">Restart Game</button>
     </div>
+
+    <!-- Instructions Modal -->
+    <div id="instructionsModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeInstructions">&times;</span>
+        <h2>Guess It or Miss It Math Quiz Game Instructions</h2>
+        <p>Welcome to the Guess It or Miss It Math Quiz Game!</p>
+        <p>Instructions:</p>
+        <ol>
+          <li>Two players take turns to answer math questions.</li>
+          <li>Each correct answer earns you a point.</li>
+          <li>The first player to reach 3 points wins the game.</li>
+          <li>If you answer incorrectly, the turn goes to the other player.</li>
+          <li>Click the "Submit" button to check your answer.</li>
+          <li>Click the "Reset" button to start a new game.</li>
+        </ol>
+      </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
